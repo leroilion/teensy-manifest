@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="origin" fetch="https://github.com/leroilion/"/>
+    <default revision="master" remote="origin"/>
+
+    <project path="." name="teensy-blink" revision="master"/>
+    <project path="subprojects/teensy-core" name="teensy-core" revision="v1.35"/>
+</manifest>
