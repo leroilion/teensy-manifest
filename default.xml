@@ -3,6 +3,6 @@
     <remote name="origin" fetch="https://github.com/leroilion/"/>
     <default revision="master" remote="origin"/>
 
-    <project path="." name="teensy-blink" revision="master"/>
+    <project path="." name="teensy-blink-freertos" revision="master"/>
     <project path="subprojects/teensy-core" name="teensy-core" revision="v1.35"/>
 </manifest>

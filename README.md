@@ -21,9 +21,9 @@ sudo apt install meson ninja
 ## Create workspace
 
 ```
-mkdir teensy-blink-workspace
-cd teensy-blink-workspace
-repo init -u https://github.com/leroilion/teensy-manifest.git -b blink -m default.xml
+mkdir teensy-blink-freertos-workspace
+cd teensy-blink-freertos-workspace
+repo init -u https://github.com/leroilion/teensy-manifest.git -b blink-freertos -m default.xml
 repo sync
 ```
 
@@ -32,6 +32,9 @@ repo sync
 ```
 meson build --cross-file subprojects/teensy-core/teensy-3.5-cross.txt
 cd build
+sleep 1
+meson configure -D teensy-core:freertos=true
+sleep 1
 ninja
 ninja flash
 ```
